@@ -7,9 +7,9 @@ const Main = () => {
       <Container className="mt-5 mb-5 pt-5 pb-5">
         <Row>
           <Col sm={8}>
-            <Image src={bgSec} />
-            <h1 className="fw-bold">Emporium do Jogador</h1>
-            <p>
+            <Image className="mw-100" src={bgSec}/>
+            <h1 className="fw-bold color-text">Emporium do Jogador</h1>
+            <p className="color-text">
               No Emporium do Jogador, os jogadores podem encontrar uma ampla
               seleção de informações sobre raças, classes, subclasses, magias,
               itens mágicos, monstros e muito mais. Esses recursos são
