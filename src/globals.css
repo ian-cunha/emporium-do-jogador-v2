@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Modern+Antiqua&family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+  font-family: 'Merriweather', serif;
+  font-family: 'Modern Antiqua', cursive;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--font-color);
+  background-image: url(./assets/bgMain.jpg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  ::selection {
+    color: var(--font-color);
+    background: var(--background-color);
+  }
+
+  --primary-color: #759aab;
+  --secondary-color: #453f78;
+  --terciary-color: #3f2e56;
+  --background-color: #401f3e;
+  --font-color: #c8a273;
+  --dark-color: #2e2e2e;
+}
+
+body {
+  font-family: 'Merriweather', serif !important;
+  font-family: 'Modern Antiqua', cursive;
+  font-family: 'Montserrat', sans-serif;
+  background-color: transparent !important;
+}
+
+.bg {
+  background-color: var(--background-color) !important;
+}
+
+.color {
+  color: var(--font-color) !important;
+}
+
+.btn-nav {
+  color: var(--background-color) !important;
+}
+
+.bgImg {
+  background-image: url(./assets/bgMain.jpg);
+}
+
+.navbar-toggler-icon {
+  --bs-navbar-toggler-icon-bg: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pjxzdmcgdmlld0JveD0iMCAwIDUxMiA1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIwLjA0IDMxNy4zQzE4IDMxNy4zIDE2IDMxNS44IDE2IDMxMy4zVjE1MC41YzAtMi4zNTEgMS45MS00LjAxMiA0LjAwMS00LjAxMmMuNjg4MiAwIDEuMzk2IC4xOCAyLjA2MiAuNTc0OGw3Ni42MiA0NS4xbC03NS4yOCAxMjIuM0MyMi41OSAzMTYuOCAyMS4zMSAzMTcuMyAyMC4wNCAzMTcuM3pNMjMxLjQgNDA1LjJsLTIwOC4yLTIyLjA2Yy00LjI3LS40ODIxLTcuMTIzLTQuMTE3LTcuMTIzLTcuOTk1YzAtMS40MDEgLjM3MjUtMi44MzQgMS4xODUtNC4xNjFMMTIyLjcgMjE1LjFMMjMxLjQgNDA1LjJ6TTMxLjEgNDIwLjFjMC0yLjAzOSAxLjUwOC00LjA2OCAzLjkzLTQuMDY4Yy4xNjU0IDAgLjMzNTEgLjAwOTUgLjUwODkgLjAyOTFsMjAzLjYgMjIuMzF2NjUuNjZDMjM5LjEgNTA4LjYgMjM2LjIgNTEyIDIzMiA1MTJjLTEuMTEzIDAtMi4yNTUtLjIzODctMy4zNjMtLjc1NjVMMzQuMjUgNDIzLjZDMzIuNjkgNDIyLjggMzEuMSA0MjEuNCAzMS4xIDQyMC4xek0zMy45NCAxMTcuMWMtMS4yODktLjc2NDEtMS45MzgtMi4wODgtMS45MzgtMy40MTdjMC0xLjI4MSAuNjAxOS0yLjU2NyAxLjgxMy0zLjM2NGwxNTAuOC05OC41OUMxODUuMSAxMC45OCAxODcuMyAxMC42NCAxODguNiAxMC42NGM0LjMyIDAgOC4wMDMgMy43MjEgOC4wMDMgOC4wMjJjMCAxLjM3OS0uMzc4OCAyLjgxOC0xLjIzNyA0LjIxNEwxMTUuNSAxNjUuOEwzMy45NCAxMTcuMXpNMTQ2LjggMTc1LjFsOTUuNTktMTY4LjRDMjQ1LjUgMi41MyAyNTAuNyAwIDI1NS4xIDBzMTAuNSAyLjUzIDEzLjYyIDcuNjI0bDk1LjU5IDE2OC40SDE0Ni44ek0zNTYuNCAyMDcuMWwtMTAwLjQgMTc1LjdMMTU1LjYgMjA3LjFIMzU2LjR6TTQ3Ni4xIDQxNS4xYzIuNDIyIDAgMy45MyAyLjAyOSAzLjkzIDQuMDY4YzAgMS4zNzgtLjY4OTMgMi43NjEtMi4yNTIgMy41MjRsLTE5NC40IDg3LjY2Yy0xLjEwMyAuNTA5Mi0yLjI0MSAuNzQ0My0zLjM1IC43NDQzYy00LjIgMC03Ljk5NC0zLjM3MS03Ljk5NC03Ljk5NHYtNjUuNjlsMjAzLjYtMjIuMjhDNDc1LjcgNDE2IDQ3NS45IDQxNS4xIDQ3Ni4xIDQxNS4xek00OTQuOCAzNzAuOUM0OTUuNiAzNzIuMyA0OTYgMzczLjcgNDk2IDM3NS4xYzAgMy44NzItMi44NDEgNy40OTktNy4xMjggNy45OGwtMjA4LjIgMjIuMDZsMTA4LjYtMTkwLjFMNDk0LjggMzcwLjl6TTMxNi42IDIyLjg3Yy0uODU4MS0xLjM5NS0xLjIzNy0yLjgzNC0xLjIzNy00LjIxNGMwLTQuMzAxIDMuNjgzLTguMDIyIDguMDAzLTguMDIyYzEuMzA4IDAgMi42NzUgLjM0MTEgNC4wMTUgMS4xMWwxNTAuOCA5OC41OWMxLjIxMSAuNzk3MyAxLjgxMyAyLjA3NiAxLjgxMyAzLjM1M2MwIDEuMzI1LS42NDg4IDIuNjQ5LTEuOTM4IDMuNDI5TDM5Ni41IDE2NS44TDMxNi42IDIyLjg3ek00OTEuMSAxNDYuNWMyLjA5MSAwIDQuMDAxIDEuNjYxIDQuMDAxIDQuMDEydjE2Mi44YzAgMi40ODMtMi4wMTYgNC4wMDYtNC4wNTMgNC4wMDZjLTEuMjcgMC0yLjU0OS0uNTkxOS0zLjM1My0xLjkxMmwtNzUuMjgtMTIyLjNsNzYuNjItNDUuMUM0OTAuNiAxNDYuNyA0OTEuMyAxNDYuNSA0OTEuMSAxNDYuNXoiLz48L3N2Zz4=) !important;
+  filter: invert(100%);
+}
+
+.navbar-toggler {
+  border: none !important;
+  box-shadow: none !important;
+  -webkit-animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  -ms-animation: rotating 2s linear infinite;
+  -o-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
+}
+
+.navbar-toggler-icon:hover {
+  filter: invert(96%) sepia(20%) saturate(3932%) hue-rotate(305deg) brightness(94%) contrast(65%);
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.btn-close {
+  border: none !important;
+  box-shadow: none !important;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pjxzdmcgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjQgMjQ7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGcgaWQ9ImluZm8iLz48ZyBpZD0iaWNvbnMiPjxnIGlkPSJleGl0MiI+PHBhdGggZD0iTTEyLDEwYzEuMSwwLDItMC45LDItMlY0YzAtMS4xLTAuOS0yLTItMnMtMiwwLjktMiwydjRDMTAsOS4xLDEwLjksMTAsMTIsMTB6Ii8+PHBhdGggZD0iTTE5LjEsNC45TDE5LjEsNC45Yy0wLjMtMC4zLTAuNi0wLjQtMS4xLTAuNGMtMC44LDAtMS41LDAuNy0xLjUsMS41YzAsMC40LDAuMiwwLjgsMC40LDEuMWwwLDBjMCwwLDAsMCwwLDBjMCwwLDAsMCwwLDAgICAgYzEuMywxLjMsMiwzLDIsNC45YzAsMy45LTMuMSw3LTcsN3MtNy0zLjEtNy03YzAtMS45LDAuOC0zLjcsMi4xLTQuOWwwLDBDNy4zLDYuOCw3LjUsNi40LDcuNSw2YzAtMC44LTAuNy0xLjUtMS41LTEuNSAgICBjLTAuNCwwLTAuOCwwLjItMS4xLDAuNGwwLDBDMy4xLDYuNywyLDkuMiwyLDEyYzAsNS41LDQuNSwxMCwxMCwxMHMxMC00LjUsMTAtMTBDMjIsOS4yLDIwLjksNi43LDE5LjEsNC45eiIvPjwvZz48L2c+PC9zdmc+) !important;
+}
+
+.btn-base {
+  color: var(--dark-color) !important;
+  background-color: transparent !important;
+  border-color: var(--dark-color) !important;
+  border-radius: 0 !important;
+}
+
+.btn-base:hover,
+.btn-base:focus {
+  background-color: var(--dark-color) !important;
+  border-color: var(--secondary-color-color) !important;
+  color: var(--font-color) !important;
+  transition: all 0.5s ease-out !important;
+}
+
+.accordion {
+  --bs-accordion-btn-focus-border-color: var(--dark-color) !important;
+  --bs-accordion-btn-focus-box-shadow: 0 !important;
+  --bs-accordion-active-bg: var(--font-color) !important;
+  --bs-accordion-active-color: var(--dark-color) !important;
+  --bs-accordion-border-color: var(--dark-color) !important;
+}
+
+.accordion-item {
+  background-color: var(--font-color) !important;
+  --bs-accordion-btn-bg: var(--font-color);
+  border-color: var(--primary-color-color) !important;
+  border-radius: 0 !important;
+};
