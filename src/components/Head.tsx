@@ -10,7 +10,6 @@ const Head = () => {
     <>
       {[false].map((expand) => (
         <Navbar
-          key={expand}
           expand={expand}
           fixed="top"
           data-bs-theme="dark"
